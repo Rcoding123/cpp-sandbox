@@ -1,4 +1,4 @@
 # cpp-sandbox
 
 Systems programming in training. Working through Bjourne Stroustrup P&P.
-Goal: learn low-level C++ with a focus on HFT infastructue. 
+Goal: learn low-level C++ with a focus on HFT infastructure. 
