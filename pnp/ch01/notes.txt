@@ -1,0 +1,18 @@
+"Programming is learned by writing programs"
+
+Everything is an instruction to the computer 
+
+The computer looks for the main function to start running its instructions 
+
+How does the executable come to life?
+1. Compilation
+Take the source code and turns into object code(machine code)
+Checks for the grammar of the programming language 
+
+2. Linking
+A linker takes different object files (machine code files) and connects them together
+Checks for missing imports of modules or definition
+Executables cannot be portable (with some detailed exception)
+The source code is portable 
+
+
