@@ -1,0 +1,47 @@
+Objects, Types and Values
+
+"Fortune favors the prepared mind" - Louis Pasteur 
+
+2.1 - Input
+
+To store data (that is read either through user input, file, network) we need to use an object 
+Object: region of memory with a type that specifies what kind of information can be placed in it 
+
+A named object is called a variable 
+
+-- Code -- 
+
+int main() {
+
+    int x;
+    std::cout << "Enter an integer: " << '\n';
+    std::cin >> x;
+
+    return 0;
+  }
+
+x --> gets the value from the input 
+
+A definition is a statement that introduces a new name into a program and sets aside memory for the variable 
+
+std::cin >> (character in): input stream | get from( >> ) : insertion operator 
+
+
+2.2 Variables 
+Named object with a specific type --> determines what type of value can be used for that var and what operators can be used per the data type 
+Cannot put the wrong type into a variable: int x = "Hello"; ERROR 
+
+Variables can be declared: int x;
+Or can be initialized: int x = 5;
+
+C++ has many types, custom ones can also be created by the programmer 
+Common types are: int, double, char, string, bool 
+
+2.3 Input and type 
+Input operation is sensitive to type (>>); reads according to the type of variable you read into 
+
+Reading of strings: input of a string/strings is separated by whitespace (space, newline, and tab characters)
+How to read two words with >> (string): cin >> first >> second; (Getting more then just one word separated by whitespace)
+
+
+
