@@ -15,4 +15,54 @@ Checks for missing imports of modules or definition
 Executables cannot be portable (with some detailed exception)
 The source code is portable 
 
+Review Questions:
+1. What is the purpose of the "Hello, World!" program?
+To introduce a simple program showing the different features of C++
+
+2. Name of the four parts of the function
+a. Return type b. func name c. parameters d. function body 
+
+3. Name a function that HAS to appear in every C++ program 
+main() 
+
+4. What is the purpose of the line return 0;?
+To indicate the program ran successfully 
+
+5. What is the purpose of the compiler?
+To turn the source code into machine code --> checks for grammar of C++
+
+6. What is the purpose of the import statement?
+To use a module within our code 
+
+7. What is the purpose of the #include directive?
+The old-school and safe way to include other libraries within our code 
+
+8. What does a .cpp suffix at the end of the file name signify?
+Signifies that the file is a source code file, meant to have definitions and be included in the compilation process 
+
+9. What does the linker do for the program?
+Links the object files together to produce an executable 
+
+10. What is the difference between a source file and an object file?
+Source file is the code file we write, the object file is the file the compiler produces 
+
+11. What is an executable?
+A file when ran -> produces the outcome of the code we wrote 
+
+12. What is an IDE and what does it do for you?
+Integrated Development Environment: makes the process of programming easier, a packaged software for writing software efficiently
+
+13. How do you get a compiled program to run?
+You link the object files together 
+
+14. What is a comment?
+A note for the programmer, ignored by the compiler 
+
+15. What is the purpose of a drill?
+To reinforce the actions needed for practicing programming 
+
+16. Practice is necessary!!! 
+
+
+
 
