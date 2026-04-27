@@ -1,68 +1,133 @@
-"Programming is learned by writing programs"
+C++ Chapter 1 – Clean Notes (P&P)
 
-Everything is an instruction to the computer 
+Core Principles
 
-The computer looks for the main function to start running its instructions 
+* Programming is learned by writing programs
+* A program is a sequence of instructions for the computer
+* Execution always starts from the main() function
 
-How does the executable come to life?
-1. Compilation
-Take the source code and turns into object code(machine code)
-Checks for the grammar of the programming language 
+Program Lifecycle (very important)
 
-2. Linking
-A linker takes different object files (machine code files) and connects them together
-Checks for missing imports of modules or definition
-Executables cannot be portable (with some detailed exception)
-The source code is portable 
+1. Source code (.cpp file)
+2. Compilation → object file (.o / .obj)
+3. Linking → executable
+4. Execution → OS loads program into memory → starts at main()
 
-Review Questions:
-1. What is the purpose of the "Hello, World!" program?
-To introduce a simple program showing the different features of C++
+Compilation
 
-2. Name of the four parts of the function
-a. Return type b. func name c. parameters d. function body 
+* Done by the compiler (g++)
+* Converts .cpp → .o
+* Checks syntax (grammar of C++)
 
-3. Name a function that HAS to appear in every C++ program 
-main() 
+Linking
 
-4. What is the purpose of the line return 0;?
-To indicate the program ran successfully 
+* Done by the linker
+* Combines object files and libraries
+* Resolves missing functions and references
 
-5. What is the purpose of the compiler?
-To turn the source code into machine code --> checks for grammar of C++
+Execution
 
-6. What is the purpose of the import statement?
-To use a module within our code 
+* OS loads the executable into memory
+* Program starts running at main()
+* CPU executes instructions
 
-7. What is the purpose of the #include directive?
-The old-school and safe way to include other libraries within our code 
+File Types
 
-8. What does a .cpp suffix at the end of the file name signify?
-Signifies that the file is a source code file, meant to have definitions and be included in the compilation process 
+* .cpp → source file (compiled)
+* .h / .hpp → header file (included, not compiled directly)
+* .o / .obj → object file (compiled code)
+* Executable → final runnable program
 
-9. What does the linker do for the program?
-Links the object files together to produce an executable 
+Portability
 
-10. What is the difference between a source file and an object file?
-Source file is the code file we write, the object file is the file the compiler produces 
+* Source code → portable (if written properly)
+* Object files → NOT portable
+* Executables → NOT portable (OS + architecture dependent)
 
-11. What is an executable?
-A file when ran -> produces the outcome of the code we wrote 
+Function Structure
 
-12. What is an IDE and what does it do for you?
-Integrated Development Environment: makes the process of programming easier, a packaged software for writing software efficiently
+1. Return type
+2. Function name
+3. Parameters
+4. Function body
 
-13. How do you get a compiled program to run?
-You link the object files together 
+main() Function
 
-14. What is a comment?
-A note for the programmer, ignored by the compiler 
+* Required in every C++ program
+* Entry point of execution
 
-15. What is the purpose of a drill?
-To reinforce the actions needed for practicing programming 
+return 0;
 
-16. Practice is necessary!!! 
+* Indicates successful execution
 
+#include
 
+* Includes declarations from other files/libraries
+
+Comments
+
+* // single-line comment
+* /* multi-line comment */
+* Ignored by compiler, used for notes
+
+Compilation Command Example
+g++ -std=c++20 -Wall main.cpp -o program
+
+* g++ = compiler
+* -std=c++20 = language version
+* -Wall = show warnings
+* main.cpp = source file
+* -o program = output executable
+
+Review Answers
+
+1. Hello World purpose
+   → Introduces basic program structure
+
+2. Four parts of a function
+   → Return type, function name, parameters, function body
+
+3. Required function
+   → main()
+
+4. return 0;
+   → Signals successful execution
+
+5. Compiler purpose
+   → Converts source code to object code and checks syntax
+
+6. Purpose of include/import
+   → Access declarations from other files or libraries
+
+7. #include directive
+   → Includes header files
+
+8. .cpp file
+   → Source file that gets compiled
+
+9. Linker purpose
+   → Combines object files into executable and resolves references
+
+10. Source vs object file
+    → Source = human-written code
+    → Object = compiled machine code
+
+11. Executable
+    → Final program that runs
+
+12. IDE
+    → Integrated Development Environment; helps write, compile, and debug code
+
+13. How to run a program
+    → Compile → link → run executable
+
+14. Comment
+    → Note for programmer, ignored by compiler
+
+15. Purpose of a drill
+    → Reinforce programming skills through repetition
+
+16. Practice
+    → Required to actually learn programming
 
 
