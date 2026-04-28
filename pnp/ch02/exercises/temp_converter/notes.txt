@@ -1,0 +1,37 @@
+Temperature Converter
+
+Description:
+Create a program that asks the user for a temperature and converts it between Fahrenheit and Celsius.
+
+Basic Version (start here):
+
+Ask the user for a temperature in Fahrenheit
+Convert it to Celsius
+
+Formula:
+C = (F - 32) * 5 / 9
+
+Concepts you’re using:
+
+double variables
+arithmetic operations
+input/output
+assignment
+expressions
+
+Challenge (this is where you grow):
+
+Ask the user which conversion they want:
+1 → Fahrenheit to Celsius
+2 → Celsius to Fahrenheit
+Implement both formulas:
+
+Celsius to Fahrenheit:
+F = (C * 9 / 5) + 32
+
+Extra challenge:
+
+Use only ONE variable for input (force yourself to think)
+Test with:
+decimals (like 98.6)
+negative values
