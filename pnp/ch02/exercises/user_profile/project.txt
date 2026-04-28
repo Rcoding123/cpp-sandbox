@@ -1,0 +1,25 @@
+Description:
+Create a program that asks the user for:
+
+first name
+age
+height
+favorite number
+
+Then print a clean summary.
+
+Concepts:
+
+std::cin
+std::cout
+string, int, double
+variables
+prompts
+literals
+
+Challenge:
+
+Add 5 years to their age and print:
+“In 5 years, you will be ___ years old.”
+Multiply their favorite number by 2.
+Use '\n' properly.
