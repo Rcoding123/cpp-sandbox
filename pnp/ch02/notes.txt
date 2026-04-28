@@ -1,47 +1,88 @@
 Objects, Types and Values
 
-"Fortune favors the prepared mind" - Louis Pasteur 
+"Fortune favors the prepared" - Louis Pasteur
 
-2.1 - Input
+Review Questions
 
-To store data (that is read either through user input, file, network) we need to use an object 
-Object: region of memory with a type that specifies what kind of information can be placed in it 
+1. What is meant by the term prompt?
+   A message shown to the user asking for input
 
-A named object is called a variable 
+2. Which operator do you use to read into a variable?
 
--- Code -- 
+> > (used with std::cin)
 
-int main() {
+3. What notations can you use to initialize an object?
+   =, (), {}, = {}
 
-    int x;
-    std::cout << "Enter an integer: " << '\n';
-    std::cin >> x;
+4. Get a number from the user and put it into a variable.
 
-    return 0;
-  }
+int number;
+std::cout << "Enter a number: ";
+std::cin >> number;
 
-x --> gets the value from the input 
+5. What is \n called and what purpose does it serve?
+   Newline character; moves the cursor to the next line
 
-A definition is a statement that introduces a new name into a program and sets aside memory for the variable 
+6. What terminates input into a string?
+   Whitespace (space, newline, tab)
 
-std::cin >> (character in): input stream | get from( >> ) : insertion operator 
+7. What terminates input into an integer?
+   Whitespace or invalid (non-numeric) input
 
+8. How would you write the following as a single line?
+   std::cout << "Hello " << first_name << '\n';
 
-2.2 Variables 
-Named object with a specific type --> determines what type of value can be used for that var and what operators can be used per the data type 
-Cannot put the wrong type into a variable: int x = "Hello"; ERROR 
+9. What is an object?
+   A region of memory with a type and a value
 
-Variables can be declared: int x;
-Or can be initialized: int x = 5;
+10. What is a literal?
+    A value written directly in the code
 
-C++ has many types, custom ones can also be created by the programmer 
-Common types are: int, double, char, string, bool 
+11. What kinds of literals are there?
+    int, double, char, string, bool
 
-2.3 Input and type 
-Input operation is sensitive to type (>>); reads according to the type of variable you read into 
+12. What is a variable?
+    A named object
 
-Reading of strings: input of a string/strings is separated by whitespace (space, newline, and tab characters)
-How to read two words with >> (string): cin >> first >> second; (Getting more then just one word separated by whitespace)
+13. What are typical sizes for a char, an int, and a double?
+    char = 1 byte, int = 4 bytes, double = 8 bytes
 
+14. What measures do we use for the size of small entities in memory, such as ints and strings?
+    Bytes (and bits)
 
+15. What is the difference between = and ==?
+    = is assignment, == is equality comparison
+
+16. What is a definition?
+    Creating a variable
+
+17. What is an initialization and how does it differ from an assignment?
+    Initialization gives a value when the variable is created; assignment gives a value after creation
+
+18. What is string concatenation and how do you make it work in C++?
+    Joining strings together using the + operator
+
+19. What operators can you apply to an int?
+    +, -, *, /, %, ++, --, >, <, >=, <=
+
+20. SKIP
+
+21. SKIP
+
+22. SKIP
+
+23. What is type safety and why is it important?
+    Ensures values match their types; prevents errors and undefined behavior
+
+24. Why can conversion from double to int be a bad thing?
+    Information loss (narrowing conversion)
+
+25. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
+    Safe if no information is lost and no overflow occurs; unsafe if narrowing or overflow happens
+
+26. How can we avoid undesirable conversion?
+    Use {} (list initialization)
+
+27. What are the uses of auto?
+    Type deduction and simpler code for complex types
 
