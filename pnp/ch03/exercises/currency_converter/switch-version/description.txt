@@ -1,0 +1,4 @@
+This program converts a user-entered amount from a selected foreign currency into U.S. dollars.
+It begins by defining constant conversion rates for yen, kroner, and pounds to USD. The user is then prompted to choose which currency they want to convert (y, k, or p) and to enter the amount.
+The program converts the user’s currency choice to lowercase to ensure consistent input handling. It then uses a switch statement to determine which conversion rate to apply. Based on the selected currency, the program multiplies the entered amount by the appropriate conversion constant and outputs the result in dollars.
+If the user enters an invalid currency choice, the program displays an error message indicating bad input.
