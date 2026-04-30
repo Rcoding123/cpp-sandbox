@@ -1,0 +1,12 @@
+Make a program that converts yen, kroner, and pounds into dollars.
+
+Initial attempt: 4/10
+
+- Things to improve:
+  Use worth of currency to the USD 
+  Proper naming of variables to remove overhead of thinking 
+  CAN use std for input handling (uppercase to lower <-> lower to uppercase)
+
+Secondary Code with the updates: 8/10
+
+- For constexpr variables use UPPERCASE indicating no change to the value

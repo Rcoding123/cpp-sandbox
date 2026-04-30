@@ -1,0 +1,91 @@
+Chapter 3 - Computation
+
+"If it doesn't have to produce correct results, I can make it arbitrarily fast"
+
+The principles of computation: expressions, selections, iteration
+
+Essential skill is to express computation in ways that lead to correct and well-organized programs
+
+3.1 Computation
+
+Inputs come from a variety of sources and output can go to a variety of destinations (programs, hardware, etc.)
+
+How do different parts of a program share and exchange data?
+This is the question to solve
+
+Inputs to a part of a program are often called arguments and outputs from a part of a program are often called results
+
+3.2 Objectives and tools
+
+3 Rules of Code 
+1. Correctness
+2. Simplicity
+3. Efficiency 
+
+Code-structure for readability
+Abstraction for cleanliness 
+
+3.3 Expressions 
+- Simplest form: literal values 
+- Names of variables 
+Expressions can use multiple operators to calculate a certain value 
+
+3.3.1 Constant expressions
+What is a constant?
+A value that will remain the same throughout a programs life 
+
+How to make something constant?
+Use a constexpr symbol -> a value that will be known at compile time (a constant expression)
+
+How about if the value is a constant but initialized with no value? (The value never changes after initialization)
+Use a const symbol -> use for variables that do not change value after initialization
+
+3.3.2 Operators 
+lval is the left value
+rval is the right value 
+
+*Don't write epression with two comparison operators -> can be confusing and can lead to an error 
+
+How to increment a value?
+++a 
+a+=1 
+a=a+1 
+
+Prefer the first -> more direct to the increment iaction 
+
+3.4 Statements 
+Combination of expressions to produce an input or output 
+
+Every statement ends with a (;)
+
+Typically each statement should do something (have meaning within the program)
+
+3.4.1 Selection statements 
+2 types of selection statements 
+
+3.4.1.1 -> If-statements 
+
+-- CODE -- 
+int a {5};
+int b {10};
+
+if (a < b) {
+    std::cout << "a is less then b" << '\n';
+  }
+else {
+    std::cout << "a is bigger then b" << '\n';
+  }
+
+** CODE **
+
+if-statements choose between alternatives:
+  1. if-true, the first-statement is executed; otherwise, the second statement is executed 
+  2. there can be many branches of if-statements
+      - using else-if statements
+
+A program should test for bad input -> last else cause can be the output if there is a bad input 
+
+
+
+
+
