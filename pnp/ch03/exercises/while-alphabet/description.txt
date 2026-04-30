@@ -1,0 +1,12 @@
+This program prints the lowercase English alphabet along with the corresponding integer (ASCII) values for each character.
+
+It starts from the character `'a'` and uses a `while` loop that runs 26 times, once for each letter. On each iteration, it outputs the current character and its integer representation by adding the loop counter to the starting character.
+
+The result is a list of letters from `a` to `z`, each paired with its ASCII value.
+
+
+
+THERE CAN BE TWO DIFFERENT WAYS:
+1. The way it is written 
+2. Increment the counter and the start (use the value)
+
