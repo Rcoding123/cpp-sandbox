@@ -11,4 +11,8 @@ The average
 The highest grade
 The lowest grade
 
+Version 1: 8/10 
 
+Version 2: 9/10
+Fix for edge case of the vector being empty 
+- Edge cases are very important in programs 
