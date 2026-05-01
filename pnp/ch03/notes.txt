@@ -2,99 +2,108 @@ Chapter 3: Computation Review
 
 "If it doesn't have to produce correct results, I can make it arbitrarily fast" 
 
+
 1. What is a computation?
-An expression or set of expressions which produce an input or output to be used in a program
+   A computation is an operation that produces a result from inputs.
 
-2. What do we mean by inputs and outputs to a computation? Give examples 
-Inputs are used to produce an output (which is what is given as a result)
-func (int x) {
-    std::cout << x << '\n';
-  }
+2. What are inputs and outputs?
+   Inputs are values given to a computation.
+   Outputs are the results produced from those inputs.
 
-3. What are the three requirements a programmer should keep in  mind when expressing computations 
-a. Consistent
-b. Efficient 
-c. Safety
+3. What are the three requirements for expressing computations?
+   Correctness
+   Simplicity
+   Efficiency
 
-4. What does an expression?
-Makes a simple data value 
+4. What is an expression?
+   An expression is something that produces a value.
 
-5. What is the difference between a statement and an expression?
-A statement indicates an effect of an expression
+5. Statement vs expression
+   An expression produces a value.
+   A statement performs an action.
 
 6. What is an lvalue?
-lvalue is the value on the left of an operator
-+,-,*,/ > < etc..
-These operators need lvalues as they are at minimum binary operators 
+   An lvalue is an object that has a location in memory and can appear on the left side of an assignment.
 
 7. What is a constant expression?
-An expression that does not change its value throughout the programs life 
+   An expression evaluated at compile time that does not change.
 
 8. What is a literal?
-A literal is a value typed directly into the source code
+   A value written directly in the source code.
 
-9. What is a symbolic constant and why do we use them?
-const <var> is a symbolic constant. We use them to indicate the value will not be changed 
+9. What is a symbolic constant?
+   A named constant (using const or constexpr) that does not change.
 
 10. What is a magic constant?
-A magic constant is a number that represents a value that change but is used in multiple places of the code 
+    A raw number in code with no explanation.
 
-11. What are some operators that we can use for integers and floating-point values?
-PEMDAS, > <, ++, -- (post and pre) *= += etc..
+11. Operators for integers and floating-point values
 
-12. What operators can be used on integers but not on floating-point numbers 
-NOT SURE 
+* * * /
 
-13. What are some operators that can be used for strings?
-+, > < 
+> < >= <= == !=
+> = += -= *= /=
 
-14. When would a programmer prefer a switch-statement to an if-statement?
-When we have a set amount of constants we would like to compare a value against 
+12. Operators only for integers
+    % (modulus)
 
-15. What are some common problems with switch-statement?
-Can become too verbose, not efficient for nested conditions, rules for the cases 
+13. Operators for strings
 
-16. What is the function of each part of the header line in a for-loop, and in what sequence are they executed?
-initializer, condition, increment 
-As they are written 
+* (concatenation)
+  == != < >
 
-17. When should the for-loop be used and when should the while-loop be used?
-For-loop when limited number of operations to be done 
-While-loop when we do operations based on some true condition and not a number of set times 
+14. When to use a switch statement?
+    When comparing one variable against fixed constant values.
 
-18. Describe what the line char foo(int x) means in a function definition.
-Return type: char, foo: function name, int x: parameter 
+15. Problems with switch
+    Only works with integral types
+    Limited flexibility
+    Requires break
 
-19. When should you define a separate function for part of a program?
-- When the code is repeatable
-- Want to perform a specific action 
-- Make testing easier 
+16. Parts of a for-loop and execution order
+    for (init; condition; increment)
+    Execution: init → condition → body → increment → repeat
 
-20. What can you do to an int that you cannot do to a string?
-Divide strings and increment(maybe)?
+17. for-loop vs while-loop
+    for: known number of iterations
+    while: condition-based, unknown count
 
-21. What can you do to a string that you cannot do to an int?
-Check length
+18. What does char foo(int x) mean?
+    A function named foo that takes an int and returns a char.
 
-22. What is the index of the third element of a vector?
-2
+19. When to define a separate function?
+    When code is reusable
+    To organize logic
+    To improve readability
 
-23. How do you write a for-loop that prints every element of a vector?
-I already did this in my project 
+20. What can you do with an int but not a string?
+    Arithmetic operations (+ - * / %)
 
-24. What does vector<char>alphabet(26) do?
-Creates a vector of 26 elements with data type char (does this mean its empty or initialized with values???)
+21. What can you do with a string but not an int?
+    Get length (.size())
+    Concatenate (+)
 
-25. Describe what push_back() does to a vector?
-Adds an element to the back of the vector -> if close to full -> allocate new and then add 
+22. Index of the third element in a vector
+    2
 
-26. What does vector's member size() do?
-Gives back the number of elements in the vector
+23. How to print every element of a vector
+    Use a loop (e.g., range-based for loop)
 
-27. What makes vector so popular/useful?
-Its the easiest way to store data, its ease of use and its also efficient 
+24. What does vector<char> alphabet(26) do?
+    Creates a vector of 26 chars initialized to '\0'
 
-28. How do you sort the elements of a vector?
-Call an algorithm of the vector??? stl sort???
+25. What does push_back() do?
+    Adds an element to the end of the vector
 
+26. What does size() do?
+    Returns the number of elements in the vector
+
+27. Why is vector useful?
+    Dynamic size
+    Easy to use
+    Safe
+    Efficient
+
+28. How do you sort a vector?
+    std::sort(v.begin(), v.end());
 
