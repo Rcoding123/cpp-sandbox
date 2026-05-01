@@ -1,0 +1,14 @@
+🧩 Project: Simple Grade Tracker
+What it does:
+
+A small program that:
+
+Asks the user how many grades they want to enter
+Stores those grades in a std::vector
+Prints:
+All grades
+The average
+The highest grade
+The lowest grade
+
+
