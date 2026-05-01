@@ -47,6 +47,11 @@ int main() {
   // Vector of grades
   std::vector<double> grades{};
 
+  // Early exit
+  if (grades.size() == 0) {
+    return 0;
+  }
+
   while (std::cin >> grade) {
     grades.push_back(grade);
   }
