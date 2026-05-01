@@ -1,91 +1,100 @@
-Chapter 3 - Computation
+Chapter 3: Computation Review
 
-"If it doesn't have to produce correct results, I can make it arbitrarily fast"
+"If it doesn't have to produce correct results, I can make it arbitrarily fast" 
 
-The principles of computation: expressions, selections, iteration
+1. What is a computation?
+An expression or set of expressions which produce an input or output to be used in a program
 
-Essential skill is to express computation in ways that lead to correct and well-organized programs
-
-3.1 Computation
-
-Inputs come from a variety of sources and output can go to a variety of destinations (programs, hardware, etc.)
-
-How do different parts of a program share and exchange data?
-This is the question to solve
-
-Inputs to a part of a program are often called arguments and outputs from a part of a program are often called results
-
-3.2 Objectives and tools
-
-3 Rules of Code 
-1. Correctness
-2. Simplicity
-3. Efficiency 
-
-Code-structure for readability
-Abstraction for cleanliness 
-
-3.3 Expressions 
-- Simplest form: literal values 
-- Names of variables 
-Expressions can use multiple operators to calculate a certain value 
-
-3.3.1 Constant expressions
-What is a constant?
-A value that will remain the same throughout a programs life 
-
-How to make something constant?
-Use a constexpr symbol -> a value that will be known at compile time (a constant expression)
-
-How about if the value is a constant but initialized with no value? (The value never changes after initialization)
-Use a const symbol -> use for variables that do not change value after initialization
-
-3.3.2 Operators 
-lval is the left value
-rval is the right value 
-
-*Don't write epression with two comparison operators -> can be confusing and can lead to an error 
-
-How to increment a value?
-++a 
-a+=1 
-a=a+1 
-
-Prefer the first -> more direct to the increment iaction 
-
-3.4 Statements 
-Combination of expressions to produce an input or output 
-
-Every statement ends with a (;)
-
-Typically each statement should do something (have meaning within the program)
-
-3.4.1 Selection statements 
-2 types of selection statements 
-
-3.4.1.1 -> If-statements 
-
--- CODE -- 
-int a {5};
-int b {10};
-
-if (a < b) {
-    std::cout << "a is less then b" << '\n';
-  }
-else {
-    std::cout << "a is bigger then b" << '\n';
+2. What do we mean by inputs and outputs to a computation? Give examples 
+Inputs are used to produce an output (which is what is given as a result)
+func (int x) {
+    std::cout << x << '\n';
   }
 
-** CODE **
+3. What are the three requirements a programmer should keep in  mind when expressing computations 
+a. Consistent
+b. Efficient 
+c. Safety
 
-if-statements choose between alternatives:
-  1. if-true, the first-statement is executed; otherwise, the second statement is executed 
-  2. there can be many branches of if-statements
-      - using else-if statements
+4. What does an expression?
+Makes a simple data value 
 
-A program should test for bad input -> last else cause can be the output if there is a bad input 
+5. What is the difference between a statement and an expression?
+A statement indicates an effect of an expression
 
+6. What is an lvalue?
+lvalue is the value on the left of an operator
++,-,*,/ > < etc..
+These operators need lvalues as they are at minimum binary operators 
 
+7. What is a constant expression?
+An expression that does not change its value throughout the programs life 
 
+8. What is a literal?
+A literal is a value typed directly into the source code
+
+9. What is a symbolic constant and why do we use them?
+const <var> is a symbolic constant. We use them to indicate the value will not be changed 
+
+10. What is a magic constant?
+A magic constant is a number that represents a value that change but is used in multiple places of the code 
+
+11. What are some operators that we can use for integers and floating-point values?
+PEMDAS, > <, ++, -- (post and pre) *= += etc..
+
+12. What operators can be used on integers but not on floating-point numbers 
+NOT SURE 
+
+13. What are some operators that can be used for strings?
++, > < 
+
+14. When would a programmer prefer a switch-statement to an if-statement?
+When we have a set amount of constants we would like to compare a value against 
+
+15. What are some common problems with switch-statement?
+Can become too verbose, not efficient for nested conditions, rules for the cases 
+
+16. What is the function of each part of the header line in a for-loop, and in what sequence are they executed?
+initializer, condition, increment 
+As they are written 
+
+17. When should the for-loop be used and when should the while-loop be used?
+For-loop when limited number of operations to be done 
+While-loop when we do operations based on some true condition and not a number of set times 
+
+18. Describe what the line char foo(int x) means in a function definition.
+Return type: char, foo: function name, int x: parameter 
+
+19. When should you define a separate function for part of a program?
+- When the code is repeatable
+- Want to perform a specific action 
+- Make testing easier 
+
+20. What can you do to an int that you cannot do to a string?
+Divide strings and increment(maybe)?
+
+21. What can you do to a string that you cannot do to an int?
+Check length
+
+22. What is the index of the third element of a vector?
+2
+
+23. How do you write a for-loop that prints every element of a vector?
+I already did this in my project 
+
+24. What does vector<char>alphabet(26) do?
+Creates a vector of 26 elements with data type char (does this mean its empty or initialized with values???)
+
+25. Describe what push_back() does to a vector?
+Adds an element to the back of the vector -> if close to full -> allocate new and then add 
+
+26. What does vector's member size() do?
+Gives back the number of elements in the vector
+
+27. What makes vector so popular/useful?
+Its the easiest way to store data, its ease of use and its also efficient 
+
+28. How do you sort the elements of a vector?
+Call an algorithm of the vector??? stl sort???
 
 
