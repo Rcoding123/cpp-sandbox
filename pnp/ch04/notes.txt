@@ -1,0 +1,18 @@
+Chapter 4: Review 
+
+"I realized that from now on a large part of my life would be spent finding and correcting my own mistakes " - Maurice Wilkes
+
+1. Name four major types of error and briefly describe each one 
+  - Compile error: syntax errors that occur in the source code that are caught by the compiler 
+  - Linker error: in the process of forming an executable; the object files form mismatches causing there to be a linking issue 
+  - Type errors: when there is a type mismatch between the object and its value 
+  - Run-time error: logic errors which are identifiable only after the program has been executed 
+
+2. What kinds of errors can we ignore in student programs?
+Hardware errors??? Not to sure 
+
+3. What guarantees should every completed project offer?
+  - Most to all errors have been handled in an efficient way 
+
+4. 
+
